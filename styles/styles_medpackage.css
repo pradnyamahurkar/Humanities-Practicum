@@ -1,0 +1,161 @@
+@charset"utf-8";
+
+header {
+	padding-top: 200px;
+	background-image: url("../pics/package.jpg");
+	text-align: center;
+	padding-bottom: 100px;
+	font-size: 25pt;
+	font-weight: bold;
+}
+
+mark {
+  background-color: white;
+  padding: 5px;
+}
+
+body {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12pt;
+}
+
+a:link, a:visited {
+	color: black;
+	font-weight: bold;
+	font-size: 12pt
+}
+
+a:hover, a:active {
+	color: gray;
+	text-decoration: none;
+}
+
+em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .content{
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+nav ul{
+	display: inline-block;
+}
+
+nav {
+  overflow: hidden;
+  background-color: white;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+/*  min-width: 1000px;*/
+}
+
+nav a {
+	float: left;
+  	display: block;
+	color: #f2f2f2;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	color: black;
+  	font-weight: bold;
+  	font-size: 12pt;
+}
+
+
+.container{
+	text-align: center;
+	width: 10%;
+ 	color: white;
+}
+
+footer {
+	padding-top: 5px;
+	margin-top: 40px;
+	border-top: 3px solid #333333;
+}
+
+#copyright {
+	text-align: right
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.box {
+  background-color: white;
+  padding: 10px;
+  border: medium groove;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@keyframes expand {
+  from {transform: translateY(-2000px)}
+  to {transform: translatey(0);}
+}
+@media (max-width:421px){
+  .hide-on-tablet {
+    display: none;
+  }
+  .show-on-tablet {
+    display: block;
+  }
+}
